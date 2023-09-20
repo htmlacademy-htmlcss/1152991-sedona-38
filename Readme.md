@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Daniel Muravtsev](https://up.htmlacademy.ru/htmlcss/38/user/1152991).
-* Наставник: `Неизвестно`.
+* Наставник: [Дина Шарипова](https://htmlacademy.ru/profile/id1418957).
 
 ---
 
