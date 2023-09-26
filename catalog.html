@@ -10,7 +10,7 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html" aria-label="На главную SEDONA"><img src="#" alt="Логотип города Sedona"></a>
+        <a class="navigation-logo" href="index.html" aria-label="На главную SEDONA"><img src="img/logo.svg" alt="Логотип города Sedona"></a>
         <ul class="menu">
           <li class="menu-item"><a class="menu-item-link" href="index.html">Главная</a></li>
           <li class="menu-item"><a class="menu-item-link" href="#">О Cедоне</a></li>
@@ -101,8 +101,8 @@
             <legend class="filter-title">Стоимость, ₽:</legend>
             <span>От </span><input class="control-input-price" type="number" value="0" name="group-filter-price">
             <span>До </span><input class="control-input-price" type="number" value="9000" name="group-filter-price">
-            <button></button>
-            <button></button>
+            <button type="button"></button>
+            <button type="button"></button>
           </fieldset>
 
           <fieldset class="form-btns">
@@ -118,6 +118,7 @@
           <h2 class="catalog-sort-text">Найдено гостиниц: 38</h2>
           <select name="sort-price">
             <option>Сначала дешевые</option>
+            <option>Сначала дорогие</option>
           </select>
 
           <ul class="card-view-buttons">
@@ -135,10 +136,10 @@
 
         <ul class="product-list">
           <li class="product-card">
-            <img class="product-card-image" src="#" alt="Звездное небо в расщелине горы">
+            <a href="#"><img class="product-card-image" src="img/hotel-1.jpg" alt="Звездное небо в расщелине горы"></a>
             <h3 class="product-card-title"><a href="#">Amara Resort & Spa</a></h3>
             <p class="product-card-text">Гостиница</p>
-            <b class="product-card-price">От 4000 ₽</b>
+            <p class="product-card-price">От 4000 ₽</p>
             <div class="product-card-wrap">
               <a class="product-card-link" href="#">подробнее</a>
               <a class="product-card-link" href="#">в избранное</a>
@@ -150,10 +151,10 @@
           </li>
 
           <li class="product-card">
-            <img class="product-card-image" src="#" alt="Радуга над хребтом">
+            <a href="#"><img class="product-card-image" src="img/hotel-2.jpg" alt="Радуга над хребтом"></a>
             <h3 class="product-card-title"><a href="#">Villas at Poco Diablo</a></h3>
             <p class="product-card-text">Гостиница</p>
-            <b class="product-card-price">От 5000 ₽</b>
+            <p class="product-card-price">От 5000 ₽</p>
             <div class="product-card-wrap">
               <a class="product-card-link" href="#">подробнее</a>
               <a class="product-card-link favourites" href="#">в избранном</a>
@@ -165,10 +166,10 @@
           </li>
 
           <li class="product-card">
-            <img class="product-card-image" src="#" alt="Горы на фоне неба">
+            <a href="3"><img class="product-card-image" src="img/hotel-3.jpg" alt="Горы на фоне неба"></a>
             <h3 class="product-card-title"><a href="#">Desert Quail Inn</a></h3>
             <p class="product-card-text">Гостиница</p>
-            <b class="product-card-price">От 2500 ₽</b>
+            <p class="product-card-price">От 2500 ₽</p>
             <div class="product-card-wrap">
               <a class="product-card-link" href="#">подробнее</a>
               <a class="product-card-link" href="#">в избранное</a>
@@ -180,15 +181,15 @@
           </li>
 
           <li class="product-card">
-            <img class="product-card-image" src="#" alt="Горы на фоне звёздного неба">
+            <a href="#"><img class="product-card-image" src="img/hotel-4.jpg" alt="Горы на фоне звёздного неба"></a>
             <h3 class="product-card-title"><a href="#">GreenTree Inn</a></h3>
             <p class="product-card-text">Гостиница</p>
-            <b class="product-card-price">От 1500 ₽</b>
+            <p class="product-card-price">От 1500 ₽</p>
             <div class="product-card-wrap">
               <a class="product-card-link" href="#">подробнее</a>
               <a class="product-card-link" href="#">в избранное</a>
               <span class="product-card-starts">
-                <p class="visually-hidden">Звезд у гостиницы</p>
+                <p class="visually-hidden">Звезды у гостиницы</p>
               </span>
               <p class="product-card-rating">Рейтинг: 5,0</p>
             </div>
@@ -227,7 +228,7 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="subscribe-input" type="email" id="subscribe-date" name="subscribe-date" placeholder="Ваш e-mail"
             required>
-          <button class="subscribe-btn">Подписаться</button>
+          <button class="subscribe-btn" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -254,7 +255,7 @@
       </ul>
       <address class="contacts-address">
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/"><img src="#" alt="Логотип сайта разработчика"></a>
+        <a href="https://htmlacademy.ru/"><img src="img/html-academy.svg" alt="Логотип сайта разработчика"></a>
       </address>
     </footer>
   </body>
