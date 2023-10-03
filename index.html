@@ -4,42 +4,56 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="style/style.css">
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
-        <a class="navigation-logo" href="#" aria-label="На главную SEDONA"><img src="img/logo.svg" alt="Логотип города Sedona" width="140" height="70"></a>
+        <a class="navigation-logo" href="#" aria-label="На главную SEDONA"><img src="img/logo.svg"
+            alt="Логотип города Sedona" width="140" height="70"></a>
         <ul class="menu">
           <li class="menu-item"><a class="menu-link active" href="index.html">Главная</a></li>
           <li class="menu-item"><a class="menu-link" href="#">О Cедоне</a></li>
           <li class="menu-item"><a class="menu-link" href="catalog.html">Гостиницы</a></li>
         </ul>
 
-        <ul class="menu-user">
-          <li class="menu-user-search"><a class="menu-user-search-link" href="#"><span class="visually-hidden">Поиск</span></a></li>
-          <li class="menu-user-features"><a class="menu-user-features-link" href="#"><span class="visually-hidden">Избранное</span><span>12</span></a></li>
+        <ul class="menu">
+          <li class="menu-search">
+            <a class="menu-search-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+              <span class="icon-search"></span>
+            </a>
+          </li>
+          <li class="menu-features">
+            <a class="menu-features-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="favourites-numbers">12</span>
+            </a>
+          </li>
         </ul>
-        <a class="btn" href="#">Хочу сюда!</a>
+        <a class="btn btn-link" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
-    <main class="page-main">
-      <section class="hero">
+    <main class="page-main" data-test="main">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Про город Sedona</h1>
-        <img class="hero-img" src="img/welcome.svg" alt="Добро пожаловать в Sedona">
-        <p class="hero-caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="hero-wrap">
+          <img class="hero-img" src="img/welcome.svg" alt="Добро пожаловать в Sedona">
+        </div>
+          <p class="hero-caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+
       </section>
 
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <ul class="cards">
-          <li class="card-item">
-            <h3 class="card-item-title">Настоящий городок</h3>
-            <p class="card-item-subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <li class="card-item-with-img">
+            <h3 class="card-item-with-img-title">Настоящий городок</h3>
+            <p class="card-item-with-img-subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="img/photo-1.jpg" alt="Дома на фоне гор" width="800" height="385">
           </li>
-          <li class="card-item-img"><img src="img/photo-1.jpg" alt="Дома на фоне гор" width="800" height="385"></li>
-
           <li class="card-item">
             <h3 class="card-item-title">Небольшая площадь</h3>
             <p class="card-item-subtitle">Все достопримечательности находятся очень близко</p>
@@ -52,10 +66,10 @@
             <h3 class="card-item-title">Мало туристов</h3>
             <p class="card-item-subtitle">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="card-item-img"><img src="img/photo-2.jpg" alt="Каньон" width="800" height="385"></li>
-          <li class="card-item">
-            <h3 class="card-item-title">Там есть мост дьявола</h3>
-            <p class="card-item-subtitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <li class="card-item-with-img">
+            <img src="img/photo-2.jpg" alt="Каньон" width="800" height="385">
+            <h3 class="card-item-with-img-title">Там есть мост дьявола</h3>
+            <p class="card-item-with-img-subtitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
 
@@ -77,28 +91,28 @@
         </ul>
       </section>
 
-      <section class="search">
-        <div class="search-wrap">
+      <section class="search" data-test="search">
           <h2 class="search-title">Заинтересовались?</h2>
-          <p class="search-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-            гостиниц в Седоне</p>
+          <p class="search-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="btn search-btn" href="#">Поиск гостиницы в Седоне</a>
-        </div>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <div class="subscribe-wrap">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        </div>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-input" type="email" id="subscribe-date" name="subscribe-date" placeholder="Ваш e-mail" required>
-              <button class="subscribe-btn" type="s">Подписаться</button>
-          </form>
+
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="subscribe-input" type="email" id="subscribe-date" name="subscribe-date" placeholder="Ваш e-mail"
+            required>
+          <button class="subscribe-btn" type="submit">Подписаться</button>
+        </form>
+
+      </div>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="social-links">
         <li class="social-link">
           <a class="social-link-btn" href="https://vk.com/htmlacademy">
@@ -120,7 +134,8 @@
       </ul>
       <address class="contacts-address">
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/"><img src="img/html-academy.svg" alt="Логотип HTML Academy" width="114" height="32"></a>
+        <a href="https://htmlacademy.ru/"><img src="img/html-academy.svg" alt="Логотип HTML Academy" width="114"
+            height="32"></a>
       </address>
 
     </footer>
