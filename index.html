@@ -11,9 +11,9 @@
     <div class="body-wrap">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a class="navigation-logo" href="#" aria-label="На главную SEDONA"><img src="img/logo.svg"
+          <a class="navigation-logo" href="#"><img src="img/logo.svg"
               alt="Логотип города Sedona" width="140" height="70"></a>
-          <ul class="menu-link">
+          <ul class="menu">
             <li class="menu-item"><a class="menu-link active" href="index.html">Главная</a></li>
             <li class="menu-item"><a class="menu-link" href="#">О Cедоне</a></li>
             <li class="menu-item"><a class="menu-link" href="catalog.html">Гостиницы</a></li>
@@ -32,8 +32,11 @@
                 <span class="favourites-numbers">12</span>
               </a>
             </li>
+            <li class="menu-user-link">
+              <a class="btn nav-btn-link" href="#">Хочу сюда!</a>
+            </li>
           </ul>
-          <a class="btn nav-btn-link" href="#">Хочу сюда!</a>
+
         </nav>
       </header>
 
@@ -43,18 +46,23 @@
           <div class="hero-wrap">
             <img class="hero-img" src="img/welcome.svg" alt="Добро пожаловать в Sedona">
           </div>
-          <p class="hero-caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-
         </section>
 
         <section class="advantages" data-test="advantages">
+          <div class="hero-wrap-text">
+            <p class="hero-caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
+
           <ul class="cards">
             <li class="card-item-with-img">
-              <h3 class="card-item-with-img-title">Настоящий городок</h3>
-              <p class="card-item-with-img-subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img src="img/photo-1.jpg" alt="Дома на фоне гор" width="800" height="385">
+              <div class="card-item-wrap-text">
+                <h3 class="card-item-title">Настоящий городок</h3>
+                <p class="card-item-subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+              <img class="card-img" src="img/photo-1.jpg" alt="Дома на фоне гор" width="800" height="385">
             </li>
+
             <li class="card-item">
               <h3 class="card-item-title">Небольшая площадь</h3>
               <p class="card-item-subtitle">Все достопримечательности находятся очень близко</p>
@@ -67,25 +75,32 @@
               <h3 class="card-item-title">Мало туристов</h3>
               <p class="card-item-subtitle">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
+
             <li class="card-item-with-img">
-              <h3 class="card-item-with-img-title">Там есть мост дьявола</h3>
-              <p class="card-item-with-img-subtitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <img src="img/photo-2.jpg" alt="Каньон" width="800" height="385">
+              <img class="card-img" src="img/photo-2.jpg" alt="Каньон" width="800" height="385">
+              <div class="card-item-wrap-text">
+                <h3 class="card-item-title">Там есть мост дьявола</h3>
+                <p class="card-item-subtitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
             </li>
           </ul>
-
-          <p class="advantages-caption">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="advantages-text">Опытный персонал и качественное обслуживание!</p>
-          <ul class="cards">
-            <li class="card-item">
+          <div class="advantages-wrap-text">
+            <p class="advantages-caption">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="advantages-text">Опытный персонал и качественное обслуживание!</p>
+        </div>
+          <ul class="cards-about">
+            <li class="card-about-item">
+              <div class="card-about-item-img"></div>
               <h3 class="card-item-title">Жильё</h3>
               <p class="card-item-subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="card-item">
+            <li class="card-about-item">
+              <div class="card-about-item-img"></div>
               <h3 class="card-item-title">Еда</h3>
               <p class="card-item-subtitle">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="card-item">
+            <li class="card-about-item">
+              <div class="card-about-item-img"></div>
               <h3 class="card-item-title">Сувениры</h3>
               <p class="card-item-subtitle">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -141,7 +156,7 @@
                 alt="Логотип HTML Academy" width="114" height="32"></a>
           </address>
       </footer>
-      </div>
+    </div>
     </div>
   </body>
 
