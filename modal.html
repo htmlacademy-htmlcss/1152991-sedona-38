@@ -49,7 +49,7 @@
       <main class="main-container" data-test="main">
         <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Про город Sedona.</h1>
-          <img class="hero-img" src="img/welcome.svg" alt="Добро пожаловать в Sedona">
+          <img class="hero-img" src="img/welcome.svg" width="458" height="352" alt="Добро пожаловать в Sedona">
         </section>
 
         <section class="advantages" data-test="advantages">
@@ -179,7 +179,7 @@
       </footer>
     </div>
 
-    <div class="modal-container">
+    <div class="modal-container" data-test="modal">
       <div class="modal modal-auth">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
@@ -187,18 +187,26 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="form-modal-search" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="search-options caption-date">
-              <span class="modal-text-form">Дата заезда:</span>
-                <input class="date-field" type="text" name="check-in" placeholder="Укажите дату" required>
-                <span class="calendar"></span>
-              </label>
-              <span class="message error">Мы не можем отправить вас в прошлое.</span>
-            <label class="search-options caption-date">
-              <span class="modal-text-form">Дата выезда:</span>
-                <input class="date-field" type="text" name="check-out" placeholder="Укажите дату" required>
-                <span class="calendar"></span>
-              </label>
-              <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+
+
+            <div class="housing-date-wrap">
+              <label class="search-options caption-date" for="check-in">Дата заезда:</label>
+                <span class="date-field-wrap">
+                  <input class="date-field" type="text" name="check-in" id="check-in" placeholder="Укажите дату" value="27 апреля 2020" required>
+                  <span class="calendar"></span>
+                  <span class="message error">Мы не можем отправить вас в прошлое.</span>
+                </span>
+              </div>
+
+              <div class="housing-date-wrap">
+                <label class="search-options caption-date" for="check-out">Дата выезда:</label>
+                  <span class="date-field-wrap">
+                    <input class="date-field" type="text" name="check-in" id="check-out" placeholder="Укажите дату" value="1 сентября 2023" required>
+                    <span class="calendar"></span>
+                    <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+                  </span>
+                </div>
+
             <div class="search-options-wrap">
               <label class="search-options adults" for="adults">Взрослые:</label>
                 <div class="person-field-wrap adults">
@@ -206,6 +214,7 @@
                   <input class="person-field" type="number" id="adults" name="adults" value="2" min="0" max="99">
                   <button class="btn-mark btn-plus" type="button"></button>
                 </div>
+
             <span class="form-label form-label-icon">
               <label class="search-options children" for="children">Дети:</label>
               <span class="tooltip">
