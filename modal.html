@@ -42,9 +42,7 @@
                 </a>
               </li>
           </ul>
-          <div class="nav-btn-link-wrap">
-            <a class="btn nav-btn-link" href="#">Хочу сюда!</a>
-          </div>
+          <a class="btn nav-btn-link" href="#">Хочу сюда!</a>
         </nav>
       </header>
 
@@ -99,30 +97,24 @@
             <p class="lead lead-footer">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</p>
             <p class="advantages-list-title">Опытный персонал и качественное обслуживание!</p>
           </div>
-          <ul class="service" data-test="service">
+          <ul class="advantages-list-service">
             <li class="advantages-item-service">
               <div class="advantages-item-service-container">
-                <div class="advantages-item-service-housing">
-                  <span class="visually-hidden">Иконка домика.</span>
-                </div>
+                <div class="advantages-item-service-housing"></div>
                 <h3 class="advantages-title-service">Жильё</h3>
                 <p class="advantages-subtitle-service">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
               </div>
             </li>
             <li class="advantages-item-service">
               <div class="advantages-item-service-container">
-                <div class="advantages-item-service-food">
-                  <span class="visually-hidden">Иконка Еды.</span>
-                </div>
+                <div class="advantages-item-service-food"></div>
                 <h3 class="advantages-title-service">Еда</h3>
                 <p class="advantages-subtitle-service">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
               </div>
             </li>
             <li class="advantages-item-service">
               <div class="advantages-item-service-container">
-                <div class="advantages-item-service-souvenirs">
-                  <span class="visually-hidden">Иконка подарка.</span>
-                </div>
+                <div class="advantages-item-service-souvenirs"></div>
                 <h3 class="advantages-title-service">Сувениры</h3>
                 <p class="advantages-subtitle-service">Не только китайского,<br> но и настоящего местного<br>производства!</p>
               </div>
@@ -132,7 +124,7 @@
         <section class="search" data-test="search">
           <h2 class="search-title">Заинтересовались?</h2>
           <p class="search-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <p class="btn-search-center"><a class="btn search-btn" href="modal.html">Поиск гостиницы в Седоне</a></p>
+          <p class="btn-search-center"><a class="btn search-btn" href="index-popup.html">Поиск гостиницы в Седоне</a></p>
         </section>
         <section class="subscribe subscribe-theme-custom" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -140,7 +132,6 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe-input" type="email" id="subscribe-date" name="email" placeholder="Ваш e-mail" required>
             <button class="subscribe-btn" type="submit">Подписаться</button>
-            <span class="visually-hidden">Подписаться.</span>
           </form>
         </section>
       </main>
@@ -186,6 +177,63 @@
           </div>
         </div>
       </footer>
+    </div>
+
+    <div class="modal-container" data-test="modal">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="form-modal-search" action="https://echo.htmlacademy.ru/" method="post">
+
+
+            <div class="housing-date-wrap">
+              <label class="search-options caption-date" for="check-in">Дата заезда:</label>
+                <span class="date-field-wrap">
+                  <input class="date-field" type="text" name="check-in" id="check-in" placeholder="Укажите дату" value="27 апреля 2020" required>
+                  <span class="calendar"></span>
+                  <span class="message error">Мы не можем отправить вас в прошлое.</span>
+                </span>
+              </div>
+
+              <div class="housing-date-wrap">
+                <label class="search-options caption-date" for="check-out">Дата выезда:</label>
+                  <span class="date-field-wrap">
+                    <input class="date-field" type="text" name="check-in" id="check-out" placeholder="Укажите дату" value="1 сентября 2023" required>
+                    <span class="calendar"></span>
+                    <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+                  </span>
+                </div>
+
+            <div class="search-options-wrap">
+              <label class="search-options adults" for="adults">Взрослые:</label>
+                <div class="person-field-wrap adults">
+                  <button class="btn-mark btn-minus" type="button"></button>
+                  <input class="person-field" type="number" id="adults" name="adults" value="2" min="0" max="99">
+                  <button class="btn-mark btn-plus" type="button"></button>
+                </div>
+
+            <span class="form-label form-label-icon">
+              <label class="search-options children" for="children">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+
+            <div class="person-field-wrap children">
+              <button class="btn-mark btn-minus" type="button"></button>
+              <input class="person-field" type="number" id="children" name="children" value="2" min="0" max="99">
+              <button class="btn-mark btn-plus" type="button"></button>
+            </div>
+          </div>
+          <button class="form-btn-search" type="submit">Найти</button>
+          <span class="visually-hidden">Найти.</span>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
