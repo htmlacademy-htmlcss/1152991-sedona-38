@@ -1037,6 +1037,10 @@ body {
   margin: 0;
 }
 
+.range-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .range-scale {
   position: relative;
   height: 4px;
@@ -1474,12 +1478,14 @@ body {
 
 .product-card-hotel {
   margin: 0;
+  color: #333333;
   font-size: 18px;
   line-height: 21px;
 }
 
 .product-card-price {
   margin: 0;
+  color: #333333;
   -ms-grid-column-align: end;
       justify-self: end;
   font-size: 18px;
@@ -2084,11 +2090,13 @@ body {
 }
 
 .person-field {
+  font-family: inherit;
   padding: 14px 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   border: 0;
+  color: #000000;
   background: #f2f2f2;
   width: 30px;
   -webkit-box-sizing: border-box;
@@ -2101,6 +2109,10 @@ body {
   -webkit-appearance: none;
           appearance: none;
   margin: 0;
+}
+
+.person-field[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .form-btn-search {
