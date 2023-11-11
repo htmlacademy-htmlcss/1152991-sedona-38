@@ -14,7 +14,7 @@
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-            <img src="img/logo.svg" width="140" height="70" alt="Логотип города Sedona">
+            <img src="img/logo.svg" width="140" height="70" alt="Логотип города Sedona.">
           </a>
           <ul class="menu">
             <li class="menu-item">
@@ -49,7 +49,7 @@
       <main class="main-container" data-test="main">
         <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Про город Sedona.</h1>
-          <img class="hero-img" src="img/welcome.svg" width="458" height="352" alt="Добро пожаловать в Sedona">
+          <img class="hero-img" src="img/welcome.svg" width="458" height="352" alt="Добро пожаловать в Sedona.">
         </section>
 
         <section class="advantages" data-test="advantages">
@@ -64,7 +64,7 @@
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <p class="advantages-subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-img" src="img/photo-1.jpg" width="800" height="385" alt="Дома на фоне гор">
+              <img class="advantages-img" src="img/photo-1.jpg" width="800" height="385" alt="Дома на фоне гор.">
             </li>
             <li class="advantages-item">
               <div class="advantages-item-container">
@@ -89,7 +89,7 @@
                 <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
                 <p class="advantages-subtitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img class="advantages-img" src="img/photo-2.jpg" width="800" height="385" alt="Каньон">
+              <img class="advantages-img" src="img/photo-2.jpg" width="800" height="385" alt="Каньон.">
             </li>
           </ul>
 
@@ -210,9 +210,9 @@
             <div class="search-options-wrap">
               <label class="search-options adults" for="adults">Взрослые:</label>
                 <div class="person-field-wrap adults">
-                  <button class="btn-mark btn-minus" type="button"></button>
-                  <input class="person-field" type="number" id="adults" name="adults" value="2" min="0" max="99">
-                  <button class="btn-mark btn-plus" type="button"></button>
+                  <button class="btn-mark btn-minus" type="button" aria-label="Кнопка минус."></button>
+                  <input class="person-field" type="number" id="adults" name="adults" value="2" min="0" max="99" required>
+                  <button class="btn-mark btn-plus" type="button" aria-label="Кнопка плюс."></button>
                 </div>
 
             <span class="form-label form-label-icon">
@@ -224,9 +224,9 @@
             </span>
 
             <div class="person-field-wrap children">
-              <button class="btn-mark btn-minus" type="button"></button>
+              <button class="btn-mark btn-minus" type="button" aria-label="Кнопка минус."></button>
               <input class="person-field" type="number" id="children" name="children" value="2" min="0" max="99">
-              <button class="btn-mark btn-plus" type="button"></button>
+              <button class="btn-mark btn-plus" type="button" aria-label="Кнопка плюс."></button>
             </div>
           </div>
           <button class="form-btn-search" type="submit">Найти</button>
